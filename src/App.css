@@ -1,0 +1,227 @@
+body{
+  background-color:#87CEFA;
+}
+/*-------------------------------------------- Container CSS -------------------------------------------------*/
+.big-container{
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  margin: auto !important;
+  margin-top: 3.1rem!important;
+  height: 500px;
+  width: 900px;
+  background-color: #87CEFA;
+  border-radius: 50px !important;
+  border: 1px solid black;
+}
+
+
+.left-container{
+
+  justify-content: left;
+  background-color:lightblue ;
+  height: 100%;
+  width: 300px;
+  align-content: space-between;
+  border-top-left-radius: 50px;
+  border-bottom-left-radius:50px ;
+}
+
+
+
+.right-container{
+  background-color: #F0FFFF;
+  height: 100%;
+  width: 700px;
+  border-radius: 50px !important;
+}
+
+/*-------------------------------------------- Container CSS End -------------------------------------------------*/
+
+/*-------------------------------------------- Icons CSS -------------------------------------------------*/
+.left-image{
+  border-top-left-radius: 50px;
+  border-bottom-left-radius: 50px;
+  object-fit:cover;
+  height: 100%;
+  width: 300px;
+  
+}
+
+.icon-1 {
+  position: absolute;
+  margin-left: 25px;
+  margin-top: 8px;
+  border-radius: 50px !important;
+  color: white !important;
+}
+
+.icon-2 {
+  position: absolute;
+  margin-top: 8px;
+  margin-left: 250px;
+  color: white;
+}
+
+.icon-3 {
+  position: absolute;
+  margin-top: 8px;
+  margin-left: 140px;
+  color: white;
+}
+
+.sfo{
+  display: inline-flex;
+  font-size: 20px;
+  background-color: #A7C7E7;
+  padding-bottom: 30px;
+  margin-left: 8px;
+}
+
+#exp {
+  font-size: 50px;
+  position: absolute;
+  background-color:#A7C7E7;
+  margin-left: -340px;
+  margin-top:-220px ;
+  left: 50%;
+  top: 50%;
+  font-family: 'Josefin Sans', sans-serif;
+  opacity: 0.39;
+}
+
+.next-icon{
+  display: inline-flex;
+    position: absolute;
+    margin-top: 150px;
+    margin-left: 55px;
+    background-color: white;
+}
+
+.prev-icon{
+  display: inline-flex;
+  position: absolute;
+  margin-top: 150px;
+  margin-left: -100px;
+  background-color: white;
+}
+
+/*-------------------------------------------- Icons CSS End -------------------------------------------------*/
+
+
+/*-------------------------------------------- Right Container CSS -------------------------------------------------*/
+.welcome-bar{
+  margin-top: 20px;
+  background-color: #F0FFFF;
+  border-top-right-radius: 50px;
+  position: relative;
+  margin-left: 45px;
+  width: 555px;
+  height: 50px;
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+.weather-info{
+  display: inline-flex;
+  background-color: #F0FFFF!important;
+  margin-top: 2px!important;
+}
+
+.profile-photo{
+  position:absolute;
+  margin-left: 310px;
+  height: 30px;
+  width: 45px;
+  border-radius: 50%;
+}
+
+.three-dots{
+  position: absolute;
+  background-color: #F0FFFF;
+  /* color: white; */
+  margin-left: 422px;
+  margin-top: -15px;
+}
+
+.chart-1{
+  margin-left: 50px;
+  margin-top: 10px;
+  height: 150px !important;
+  width: 500px ;
+}
+
+.chart-2{
+  height: 100px;
+  width: 250px;
+}
+
+
+.chart-flex{
+  margin-left: 25px;
+  background-color: #F0FFFF;
+  gap: 40px;
+  margin-top: 15px;
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  flex-wrap: wrap;
+  border-bottom-right-radius: 50px;
+}
+
+
+/*-------------------------------------------- Right Container CSS End -------------------------------------------------*/
+/*-------------------------------------------- Media Query Starts -------------------------------------------------*/
+@media screen and (max-width: 800px) {
+  .big-container{
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+    height: auto;
+    overflow: hidden;
+  }
+
+  .left-container, .left-image, .right-container{
+    width: 100%;
+  }
+
+  .welcome-bar{
+    margin: 0;
+    width: 100%;
+  }
+
+  .three-dots{
+    margin-left: 300px;
+  }
+
+  .profile-photo{
+    margin-left: 200px;
+  }
+
+  .chart-1{
+    width: 80%;
+  }
+
+  .left-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    
+  }
+
+  #exp{
+    position:absolute;
+   top: 10%;
+   left: 50%;
+  transform: translate(-50%, 0);
+    margin-left: 0;
+    margin-top: 0;
+  }
+
+
+}
+
+
+/*-------------------------------------------- Media Query Ends -------------------------------------------------*/
